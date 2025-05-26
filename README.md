@@ -1,7 +1,7 @@
 
 # N-Queens JavaFX Solver
 
-This JavaFX application solves the N-Queens problem using Backtracking or Genetic Algorithm.
+This JavaFX application solves the N-Queens problem using Backtracking or Genetic or CSP Algorithm.
 
 ## How to Run
 
