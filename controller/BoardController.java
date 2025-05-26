@@ -6,6 +6,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import model.Board;
 import solver.BacktrackingSolver;
+import solver.GeneticSolver;
 import solver.Solver;
 
 public class BoardController {
@@ -24,7 +25,7 @@ public class BoardController {
 
     @FXML
     public void initialize() {
-        algorithmChoice.getItems().addAll("Backtracking");
+        algorithmChoice.getItems().addAll("Backtracking", "Genetic");
         algorithmChoice.setValue("Backtracking");
 
         solveButton.setOnAction(e -> solve());
@@ -44,6 +45,8 @@ public class BoardController {
         String selectedAlgorithm = algorithmChoice.getValue();
         if (selectedAlgorithm.equals("Backtracking")) {
             solver = new BacktrackingSolver();
+        } else if (selectedAlgorithm.equals("Genetic")) {
+            solver = new GeneticSolver();
         } else {
             showAlert("Invalid algorithm selected.");
             return;
