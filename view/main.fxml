@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.BoardController" alignment="TOP_CENTER">
+    <padding><Insets top="70" right="70" bottom="270" left="70"/></padding>
+    <Label text="N-Queens Solver" style="-fx-font-size: 20px;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Size:"/>
+        <TextField fx:id="sizeField" promptText="e.g. 8" maxWidth="50"/>
+        <ChoiceBox fx:id="algorithmChoice"/>
+        <Button fx:id="solveButton" text="Solve"/>
+    </HBox>
+    <GridPane fx:id="boardGrid" gridLinesVisible="true"/>
+</VBox>
