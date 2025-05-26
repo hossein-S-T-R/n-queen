@@ -16,5 +16,5 @@ This JavaFX application solves the N-Queens problem using Backtracking or Geneti
 
 ## Features
 
-- Select algorithm (Backtracking or Genetic)
+- Select algorithm (Backtracking or Genetic or CSP)
 - Visual board display
